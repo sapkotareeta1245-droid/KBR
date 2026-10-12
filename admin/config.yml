@@ -3,7 +3,7 @@
 # SET repo BELOW to the real GitHub repository (owner/repository) before using /admin.
 backend:
   name: github
-  repo: OWNER/REPO
+  repo: sapkotareeta1245-droid/KBR
   branch: main
 local_backend: true
 publish_mode: simple
