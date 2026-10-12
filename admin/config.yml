@@ -1,0 +1,360 @@
+# Decap CMS configuration for KBR Cafe Restro & Bar.
+# Edits are committed to the GitHub repository, then Netlify rebuilds the site. No secrets belong in this file.
+# SET repo BELOW to the real GitHub repository (owner/repository) before using /admin.
+backend:
+  name: github
+  repo: OWNER/REPO
+  branch: main
+local_backend: true
+publish_mode: simple
+media_folder: assets/uploads
+public_folder: /assets/uploads
+locale: en
+collections:
+- name: settings
+  label: Website content
+  files:
+  - name: site
+    label: Business details
+    file: content/site.json
+    format: json
+    fields:
+    - label: Business name
+      name: name
+      widget: string
+    - label: Short name
+      name: short
+      widget: string
+      required: false
+    - label: Phone (as shown)
+      name: phoneDisplay
+      widget: string
+    - label: Phone (dialing format, e.g. +977...)
+      name: phoneTel
+      widget: string
+    - label: WhatsApp number (digits with country code; leave empty unless confirmed)
+      name: whatsapp
+      widget: string
+      required: false
+    - label: Address
+      name: address
+      widget: object
+      fields:
+      - label: Plus Code
+        name: plusCode
+        widget: string
+        required: false
+      - label: Street / area
+        name: street
+        widget: string
+        required: false
+      - label: Town / locality
+        name: locality
+        widget: string
+      - label: Province / region
+        name: region
+        widget: string
+      - label: Postal code
+        name: postalCode
+        widget: string
+        required: false
+      - label: Country
+        name: country
+        widget: string
+    - label: Google Maps search text (verified address or Plus Code)
+      name: mapsQuery
+      widget: string
+    - label: Opening hours (leave empty until confirmed)
+      name: hours
+      widget: text
+      required: false
+    - label: Typical price range
+      name: priceRange
+      widget: string
+      required: false
+    - label: Google rating (only if verified; shown as given, never invented)
+      name: google
+      widget: object
+      required: false
+      fields:
+      - label: Rating (e.g. 4.3)
+        name: rating
+        widget: number
+        value_type: float
+        min: 0
+        max: 5
+        required: false
+      - label: Number of reviews
+        name: reviews
+        widget: number
+        value_type: int
+        min: 0
+        required: false
+    - label: Social links (verified only)
+      name: social
+      widget: object
+      required: false
+      fields:
+      - label: Facebook
+        name: facebook
+        widget: string
+        required: false
+      - label: Instagram
+        name: instagram
+        widget: string
+        required: false
+      - label: TikTok
+        name: tiktok
+        widget: string
+        required: false
+    - label: Photos are still stock images (untick once all photos are real KBR photos)
+      name: stockPhotos
+      widget: boolean
+      default: true
+    - label: Photos (replace the stock photos with real KBR photos; always add alt text)
+      name: images
+      widget: object
+      required: false
+      fields:
+      - label: Hero photo (top of homepage)
+        name: hero
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Intro photo 1 (coffee)
+        name: intro1
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Intro photo 2 (food)
+        name: intro2
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Cafe panel
+        name: moodCafe
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Restaurant panel
+        name: moodRest
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Bar panel
+        name: moodBar
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: 'Category card: Cafe favourites'
+        name: catCafe
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: 'Category card: Restaurant dishes'
+        name: catRest
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: 'Category card: Snacks & starters'
+        name: catSnack
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: 'Category card: Beverages'
+        name: catDrink
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: 'Category card: Bar'
+        name: catBar
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Atmosphere photo 1
+        name: atmos1
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Atmosphere photo 2
+        name: atmos2
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+      - label: Menu page photo
+        name: menuHero
+        widget: object
+        required: false
+        fields:
+        - label: Photo (upload, or paste a link)
+          name: src
+          widget: image
+          required: false
+        - label: Alt text (describe what the photo shows)
+          name: alt
+          widget: string
+          required: false
+  - name: menu
+    label: Menu
+    file: content/menu.json
+    format: json
+    fields:
+    - label: This menu is still SAMPLE data (untick once the real menu is entered)
+      name: isSample
+      widget: boolean
+      default: true
+    - label: Categories
+      name: categories
+      widget: list
+      summary: '{{fields.label}}'
+      fields:
+      - label: ID (lowercase, no spaces, e.g. momos)
+        name: id
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - Use lowercase letters, numbers and dashes only
+      - label: Name shown on the site
+        name: label
+        widget: string
+    - label: Items
+      name: items
+      widget: list
+      summary: '{{fields.name}} | NPR {{fields.price}}'
+      fields:
+      - label: ID (unique, lowercase, e.g. steam-momo)
+        name: id
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - Use lowercase letters, numbers and dashes only
+      - label: Category
+        name: category
+        widget: relation
+        collection: settings
+        file: menu
+        search_fields:
+        - categories.*.label
+        value_field: categories.*.id
+        display_fields:
+        - categories.*.label
+      - label: Name
+        name: name
+        widget: string
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Price (NPR)
+        name: price
+        widget: number
+        value_type: int
+        min: 0
+      - label: Photo (optional)
+        name: image
+        widget: image
+        required: false

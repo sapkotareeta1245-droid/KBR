@@ -1,0 +1,243 @@
+{
+  "isSample": true,
+  "categories": [
+    {
+      "id": "starters",
+      "label": "Starters"
+    },
+    {
+      "id": "mains",
+      "label": "Main Course"
+    },
+    {
+      "id": "momos",
+      "label": "Momos"
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks"
+    },
+    {
+      "id": "cafe",
+      "label": "Cafe"
+    },
+    {
+      "id": "beverages",
+      "label": "Beverages"
+    },
+    {
+      "id": "bar",
+      "label": "Bar"
+    }
+  ],
+  "items": [
+    {
+      "id": "wings",
+      "category": "starters",
+      "name": "Crispy Chicken Wings",
+      "description": "Crisp-fried wings tossed in a house sauce.",
+      "price": 450,
+      "image": ""
+    },
+    {
+      "id": "paneerchi",
+      "category": "starters",
+      "name": "Paneer Chilli",
+      "description": "Paneer cubes with peppers in a spicy sauce.",
+      "price": 380,
+      "image": ""
+    },
+    {
+      "id": "springroll",
+      "category": "starters",
+      "name": "Veg Spring Rolls",
+      "description": "Golden rolls served with a dipping sauce.",
+      "price": 280,
+      "image": ""
+    },
+    {
+      "id": "friedrice",
+      "category": "mains",
+      "name": "Chicken Fried Rice",
+      "description": "Wok-tossed rice with chicken and vegetables.",
+      "price": 320,
+      "image": ""
+    },
+    {
+      "id": "thukpa",
+      "category": "mains",
+      "name": "Veg Thukpa",
+      "description": "A warming noodle soup with vegetables.",
+      "price": 300,
+      "image": ""
+    },
+    {
+      "id": "dalbhat",
+      "category": "mains",
+      "name": "Dal Bhat Set",
+      "description": "Rice, lentils, vegetables and pickle.",
+      "price": 350,
+      "image": ""
+    },
+    {
+      "id": "sizzler",
+      "category": "mains",
+      "name": "Chicken Sizzler",
+      "description": "Served hot on a sizzling plate with sides.",
+      "price": 650,
+      "image": ""
+    },
+    {
+      "id": "steammomo",
+      "category": "momos",
+      "name": "Steamed Chicken Momo",
+      "description": "Classic steamed dumplings with achar.",
+      "price": 220,
+      "image": ""
+    },
+    {
+      "id": "jholmomo",
+      "category": "momos",
+      "name": "Jhol Momo",
+      "description": "Momos served in a tangy, spiced broth.",
+      "price": 260,
+      "image": ""
+    },
+    {
+      "id": "friedmomo",
+      "category": "momos",
+      "name": "Fried Veg Momo",
+      "description": "Crisp-fried vegetable dumplings.",
+      "price": 200,
+      "image": ""
+    },
+    {
+      "id": "kothey",
+      "category": "momos",
+      "name": "Kothey Momo",
+      "description": "Pan-fried on one side, steamed on the other.",
+      "price": 240,
+      "image": ""
+    },
+    {
+      "id": "fries",
+      "category": "snacks",
+      "name": "French Fries",
+      "description": "Hot, salted and made for sharing.",
+      "price": 200,
+      "image": ""
+    },
+    {
+      "id": "sandwich",
+      "category": "snacks",
+      "name": "Chicken Sandwich",
+      "description": "Toasted sandwich with chicken and salad.",
+      "price": 280,
+      "image": ""
+    },
+    {
+      "id": "pakoda",
+      "category": "snacks",
+      "name": "Veg Pakoda",
+      "description": "Crunchy fritters with chutney.",
+      "price": 180,
+      "image": ""
+    },
+    {
+      "id": "cappu",
+      "category": "cafe",
+      "name": "Cappuccino",
+      "description": "Espresso with steamed milk and foam.",
+      "price": 220,
+      "image": ""
+    },
+    {
+      "id": "latte",
+      "category": "cafe",
+      "name": "Cafe Latte",
+      "description": "Smooth, milky and mellow.",
+      "price": 240,
+      "image": ""
+    },
+    {
+      "id": "coldcoffee",
+      "category": "cafe",
+      "name": "Cold Coffee",
+      "description": "Chilled coffee blended with ice.",
+      "price": 260,
+      "image": ""
+    },
+    {
+      "id": "masalatea",
+      "category": "cafe",
+      "name": "Masala Tea",
+      "description": "Spiced milk tea, brewed strong.",
+      "price": 80,
+      "image": ""
+    },
+    {
+      "id": "brownie",
+      "category": "cafe",
+      "name": "Chocolate Brownie",
+      "description": "A rich square to go with your coffee.",
+      "price": 200,
+      "image": ""
+    },
+    {
+      "id": "limesoda",
+      "category": "beverages",
+      "name": "Fresh Lime Soda",
+      "description": "Sweet, salty or mixed.",
+      "price": 150,
+      "image": ""
+    },
+    {
+      "id": "mojito",
+      "category": "beverages",
+      "name": "Virgin Mojito",
+      "description": "Mint, lime and soda over ice.",
+      "price": 280,
+      "image": ""
+    },
+    {
+      "id": "lassi",
+      "category": "beverages",
+      "name": "Mango Lassi",
+      "description": "Thick, chilled yoghurt drink.",
+      "price": 200,
+      "image": ""
+    },
+    {
+      "id": "hotchoc",
+      "category": "beverages",
+      "name": "Hot Chocolate",
+      "description": "Rich and warming.",
+      "price": 260,
+      "image": ""
+    },
+    {
+      "id": "cocktail",
+      "category": "bar",
+      "name": "House Cocktail",
+      "description": "Ask the team what is on offer today.",
+      "price": 600,
+      "image": ""
+    },
+    {
+      "id": "beer",
+      "category": "bar",
+      "name": "Bottled Beer",
+      "description": "Served cold. Brands to be confirmed.",
+      "price": 450,
+      "image": ""
+    },
+    {
+      "id": "mocktail",
+      "category": "bar",
+      "name": "Mocktail",
+      "description": "A zero-alcohol option for the table.",
+      "price": 320,
+      "image": ""
+    }
+  ]
+}
